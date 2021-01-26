@@ -50,8 +50,8 @@ public abstract class AbstractEndpointRule<T extends Endpoint> implements Endpoi
     }
 
     @Override
-    public Trigger trigger() {
-        return service.getTrigger();
+    public String schedule() {
+        return service.getSchedule();
     }
 
     @Override
